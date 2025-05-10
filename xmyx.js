@@ -6,11 +6,10 @@ new Env('星妈优选');
 @Description:
 星妈优选小程序 每日签到、任务
 
-图标： https://raw.githubusercontent.com/leiyiyan/resource/main/icons/xmyx.png
-
 [Script]
- http-response ^https?:\/\/www\.feihevip\.com\/api\/starMember\/getMemberInfo script-path= https://raw.githubusercontent.com/lyaxjt0420/js/refs/heads/main/xmyx.js, requires-body=true, timeout=60, tag=星妈优选获取Cookie
+http-response ^https?:\/\/www\.feihevip\.com\/api\/starMember\/getMemberInfo script-path= https://raw.githubusercontent.com/lyaxjt0420/js/refs/heads/main/xmyx.js, requires-body=true, timeout=60, tag=星妈优选获取Cookie
 cron "30 0 * * *" script-path= https://raw.githubusercontent.com/lyaxjt0420/js/refs/heads/main/xmyx.js, tag=星妈优选日常任务
+
 [MITM]
 hostname = www.feihevip.com
 
